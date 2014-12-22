@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3B16E2F71A46286C00BFA082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B16E2F61A46286C00BFA082 /* AppDelegate.swift */; };
-		3B16E2F91A46286C00BFA082 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B16E2F81A46286C00BFA082 /* ViewController.swift */; };
 		3B16E2FC1A46286C00BFA082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B16E2FA1A46286C00BFA082 /* Main.storyboard */; };
 		3B16E2FE1A46286C00BFA082 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B16E2FD1A46286C00BFA082 /* Images.xcassets */; };
 		3B16E3011A46286C00BFA082 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B16E2FF1A46286C00BFA082 /* LaunchScreen.xib */; };
 		3B16E30D1A46286C00BFA082 /* KeepItSeparatedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B16E30C1A46286C00BFA082 /* KeepItSeparatedTests.swift */; };
+		3B16E3171A462BF500BFA082 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B16E3161A462BF500BFA082 /* ItemsTableViewController.swift */; };
+		3B16E31B1A462E8700BFA082 /* ItemsTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B16E31A1A462E8700BFA082 /* ItemsTableDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		3B16E2F11A46286C00BFA082 /* KeepItSeparated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepItSeparated.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B16E2F51A46286C00BFA082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B16E2F61A46286C00BFA082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B16E2F81A46286C00BFA082 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B16E2FB1A46286C00BFA082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B16E2FD1A46286C00BFA082 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3B16E3001A46286C00BFA082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3B16E3061A46286C00BFA082 /* KeepItSeparatedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeepItSeparatedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B16E30B1A46286C00BFA082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B16E30C1A46286C00BFA082 /* KeepItSeparatedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepItSeparatedTests.swift; sourceTree = "<group>"; };
+		3B16E3161A462BF500BFA082 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
+		3B16E31A1A462E8700BFA082 /* ItemsTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsTableDataSource.swift; path = ../ItemsTableDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +79,10 @@
 		3B16E2F31A46286C00BFA082 /* KeepItSeparated */ = {
 			isa = PBXGroup;
 			children = (
+				3B16E31A1A462E8700BFA082 /* ItemsTableDataSource.swift */,
 				3B16E2F61A46286C00BFA082 /* AppDelegate.swift */,
-				3B16E2F81A46286C00BFA082 /* ViewController.swift */,
 				3B16E2FA1A46286C00BFA082 /* Main.storyboard */,
+				3B16E3161A462BF500BFA082 /* ItemsTableViewController.swift */,
 				3B16E2FD1A46286C00BFA082 /* Images.xcassets */,
 				3B16E2FF1A46286C00BFA082 /* LaunchScreen.xib */,
 				3B16E2F41A46286C00BFA082 /* Supporting Files */,
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B16E2F91A46286C00BFA082 /* ViewController.swift in Sources */,
+				3B16E3171A462BF500BFA082 /* ItemsTableViewController.swift in Sources */,
+				3B16E31B1A462E8700BFA082 /* ItemsTableDataSource.swift in Sources */,
 				3B16E2F71A46286C00BFA082 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
